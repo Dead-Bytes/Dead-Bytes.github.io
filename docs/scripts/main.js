@@ -8,13 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggleButton) {
         toggleButton.addEventListener('click', () => {
-            sideMenu.style.display = sideMenu.style.display === 'block' ? 'none' : 'block';
+            sideMenu.classList.toggle('active');
+            toggleButton.classList.toggle('active');
         });
     }
 
     if (closeButton) {
         closeButton.addEventListener('click', () => {
-            sideMenu.style.display = 'none';
+            sideMenu.classList.remove('active');
+            toggleButton.classList.remove('active');
         });
     }
 
@@ -28,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Hide side menu after clicking a link
-            sideMenu.style.display = 'none';
+            sideMenu.classList.remove('active');
+            toggleButton.classList.remove('active');
         });
     });
 });
