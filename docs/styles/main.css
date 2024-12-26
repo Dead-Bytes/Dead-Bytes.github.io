@@ -79,6 +79,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Close button styling */
+.close-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
 /* Section styling */
 section {
     padding: 2rem;

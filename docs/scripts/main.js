@@ -4,10 +4,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menu-toggle');
     const sideMenu = document.getElementById('side-menu');
+    const closeButton = document.getElementById('close-menu');
 
     if (toggleButton) {
         toggleButton.addEventListener('click', () => {
             sideMenu.style.display = sideMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            sideMenu.style.display = 'none';
         });
     }
 
