@@ -46,7 +46,7 @@ nav a:hover {
     grid-gap: 5px;
     cursor: pointer;
     transition: grid-gap 0.3s ease;
-    z-index: 1100; /* Ensure toggle button is above the side menu */
+    z-index: 1500; /* Ensure toggle button is above the side menu */
 }
 
 .menu-toggle.active {
@@ -72,7 +72,7 @@ nav a:hover {
     color: #fff;
     padding: 2rem;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 800;
     transition: transform 0.3s ease;
     transform: translateX(100%);
 }
