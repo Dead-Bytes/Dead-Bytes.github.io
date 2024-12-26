@@ -1,19 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+body, h1, h2, p, nav, a {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
+/* Basic styling for the body */
+body {
+    background-color: #f0f0f0; /* Assuming a light grey background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    margin-bottom: 0.5rem;
 }
 
 nav {
@@ -21,29 +29,37 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Section styling */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: #ffffff;
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
 }
