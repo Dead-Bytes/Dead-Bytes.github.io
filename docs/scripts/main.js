@@ -4,19 +4,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menu-toggle');
     const sideMenu = document.getElementById('side-menu');
-    const closeButton = document.getElementById('close-menu');
 
     if (toggleButton) {
         toggleButton.addEventListener('click', () => {
-            sideMenu.classList.toggle('active');
-            toggleButton.classList.toggle('active');
-        });
-    }
-
-    if (closeButton) {
-        closeButton.addEventListener('click', () => {
-            sideMenu.classList.remove('active');
-            toggleButton.classList.remove('active');
+            sideMenu.style.display = sideMenu.style.display === 'block' ? 'none' : 'block';
         });
     }
 
@@ -30,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Hide side menu after clicking a link
-            sideMenu.classList.remove('active');
-            toggleButton.classList.remove('active');
+            sideMenu.style.display = 'none';
         });
     });
 });
