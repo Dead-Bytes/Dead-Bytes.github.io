@@ -19,7 +19,7 @@ header {
     padding: 1rem 0;
     text-align: center;
     position: relative;
-    z-index: 1000; /* Ensure header is above other elements */
+    z-index: 700; /* Ensure header is above other elements */
 }
 
 header h1 {
@@ -43,6 +43,7 @@ nav a:hover {
     right: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 10px);
+    opacity: 0.5;
     grid-gap: 5px;
     cursor: pointer;
     transition: grid-gap 0.3s ease;
