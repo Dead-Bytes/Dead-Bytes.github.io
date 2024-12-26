@@ -19,6 +19,7 @@ header {
     padding: 1rem 0;
     text-align: center;
     position: relative;
+    z-index: 1000; /* Ensure header is above other elements */
 }
 
 header h1 {
@@ -44,6 +45,12 @@ nav a:hover {
     grid-template-columns: repeat(3, 10px);
     grid-gap: 5px;
     cursor: pointer;
+    transition: grid-gap 0.3s ease;
+    z-index: 1100; /* Ensure toggle button is above the side menu */
+}
+
+.menu-toggle.active {
+    grid-gap: 15px;
 }
 
 .menu-toggle .dot {
@@ -66,6 +73,13 @@ nav a:hover {
     padding: 2rem;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.side-menu.active {
+    display: block;
+    transform: translateX(0);
 }
 
 .side-menu a {
@@ -75,7 +89,7 @@ nav a:hover {
     margin: 1rem 0;
 }
 
-.side-menu a:hover {
+side-menu a:hover {
     text-decoration: underline;
 }
 
