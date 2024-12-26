@@ -18,14 +18,11 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     margin-bottom: 0.5rem;
-}
-
-nav {
-    margin: 20px 0;
 }
 
 nav a {
@@ -38,11 +35,53 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* 9 dots logo styling */
+.menu-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 10px);
+    grid-gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Menu styling */
+.menu {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
 /* Section styling */
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: #fff;
+    background: #fff; /* Assuming a white background color for sections */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,3 +102,4 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+
