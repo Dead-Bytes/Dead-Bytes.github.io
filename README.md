@@ -1,6 +1,6 @@
 # Welcome to my portfolio
 
-This is a portfolio project designed to showcase skills, projects, and experiences. It is structured to provide a clean and interactive user experience.
+This is a  project designed to showcase skills, projects, and experiences. It is structured to provide a clean and interactive user experience.
 
 ## Project Structure
 
