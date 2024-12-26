@@ -3,17 +3,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
+    const sideMenu = document.getElementById('side-menu');
 
     if (toggleButton) {
         toggleButton.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            sideMenu.style.display = sideMenu.style.display === 'block' ? 'none' : 'block';
         });
     }
 
     // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a, .menu a').forEach(anchor => {
+    document.querySelectorAll('nav a, .side-menu a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
 
@@ -21,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'smooth'
             });
 
-            // Hide menu after clicking a link
-            menu.style.display = 'none';
+            // Hide side menu after clicking a link
+            sideMenu.style.display = 'none';
         });
     });
 });
